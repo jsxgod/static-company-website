@@ -175,16 +175,30 @@ header{
     position: relative;
 }
 
+.image-large{
+    animation: move-down 2s infinite alternate;
+}
+
 .image-small{
     position: absolute;
     top: 2.5rem;
     left: -1rem;
     z-index: 10;
+
+    animation: move-up 2s infinite alternate;
 }
 
 .background-image{
     position: absolute;
     z-index: -1;
+}
+
+.hue-animation{
+    animation: hue-shift 6s infinite alternate;
+}
+
+.hue-animation-slow{
+    animation: hue-shift 20s infinite alternate;
 }
 
 .img-1{
@@ -206,4 +220,31 @@ header{
 .img-4{
     left: -21rem;
     bottom: -17rem;
+}
+
+@keyframes move-up {
+    from{
+        transform: translateY(0)
+    }
+    to{
+        transform: translateY(-1rem)
+    }
+}
+
+@keyframes move-down {
+    from{
+        transform: translateY(0)
+    }
+    to{
+        transform: translateY(1rem)
+    }
+}
+
+@keyframes hue-shift {
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
 }
