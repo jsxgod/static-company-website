@@ -14,6 +14,12 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+h1{
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+}
+
 a{
     text-decoration: none; /* remove underline */
 }
@@ -137,13 +143,13 @@ header{
     width: 10rem;
     margin-left: -10rem;
     transition: background-image 0.4s ease;
-    background-image: linear-gradient(to right, #FF83D5, #FFCCB0);
+    background-image: linear-gradient(to right, #BBAFFF, #1DE8A8);
     color: #fff;
     cursor: pointer;
 }
 
 .search-btn:hover{
-    background-image: linear-gradient(to left, #FF83D5, #FFCCB0);
+    background-image: linear-gradient(to left, #BBAFFF, #1DE8A8);
 }
 
 .socialmedia-list{
@@ -181,9 +187,11 @@ header{
 
 .image-small{
     position: absolute;
-    top: 2.5rem;
-    left: -1rem;
-    z-index: 10;
+    width: 30%;
+    top: 2rem;
+    left: 3rem;
+
+    filter: hue-rotate(100deg);
 
     animation: move-up 2s infinite alternate;
 }
@@ -246,5 +254,77 @@ header{
     }
     to{
         filter: hue-rotate(360deg);
+    }
+}
+
+
+/* tablets and smaller */
+@media screen and (max-width: 768px){
+    .nav{
+        align-items: center;
+    }
+
+    .logo{
+        width: 7rem;
+    }
+
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .content-details{
+        order: 1; /* 0- > 1 (move it down) */
+    }
+
+    .title{
+        font-size: 3.5rem;
+        color: #fff;
+    }
+
+    .description{
+        font-size: 1.4rem;
+    }
+
+    .image-group{
+        margin-top: 10rem;
+    }
+
+    .image-large{
+        width: 70%;
+    }
+
+    .image-small{
+        width: 30%;
+        top: 2rem;
+        left: 3rem;
+    }
+    
+    .img-1{
+        top: -15rem;
+        opacity: 0.4;
+        transform-origin: top left;
+    }
+
+    .img-2{
+        display: none;
+    }
+    
+    .img-4{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .nav{
+        flex-direction: column;
+        height: 5rem;
+    }
+
+    .logo-box{
+        margin: 2rem 0;
+    }
+
+    .nav-item{
+        margin-right: 2.5rem;
     }
 }
