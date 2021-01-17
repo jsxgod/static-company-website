@@ -1,4 +1,4 @@
 # Static, responsive website
-Website made to practice HTML and CSS.
+Website made as HTML and CSS practice.
 <br/>
 https://jsxgod.github.io/html-css-practice/index
