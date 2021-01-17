@@ -1,3 +1,3 @@
-# Static, responsive website design practice
-Website made as a html and css excercise.
+# Static, responsive website
+Website made to practice HTML and CSS.
 https://jsxgod.github.io/html-css-practice/index
