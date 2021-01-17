@@ -169,3 +169,41 @@ header{
 .socialmedia-link i{
     margin: auto;
 }
+
+.image-group{
+    text-align: center;
+    position: relative;
+}
+
+.image-small{
+    position: absolute;
+    top: 2.5rem;
+    left: -1rem;
+    z-index: 10;
+}
+
+.background-image{
+    position: absolute;
+    z-index: -1;
+}
+
+.img-1{
+    top: -11rem;
+    left: 37%;
+    transform: translateX(-50%);
+}
+
+.img-2{
+    top: 15rem;
+    left: -17rem;
+}
+
+.img-3{
+    right: -11.5rem;
+    bottom: -24rem;
+}
+
+.img-4{
+    left: -21rem;
+    bottom: -17rem;
+}
